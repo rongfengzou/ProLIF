@@ -99,7 +99,7 @@ class HBAcceptor(SingleAngle):
         self,
         acceptor="[#7&!$([nX3])&!$([NX3]-*=[O,N,P,S])&!$([NX3]-[a])&!$([Nv4&+1]),O&!$([OX2](C)C=O)&!$(O(~a)~a)&!$(O=N-*)&!$([O-]-N=O),o+0,F&$(F-[#6])&!$(F-[#6][F,Cl,Br,I])]",
         donor="[$([O,S;+0]),$([N;v3,v4&+1]),n+0]-[H]",
-        distance=3.5,
+        distance=2.8,
         DHA_angle=(130, 180),
     ):
         super().__init__(
@@ -107,7 +107,7 @@ class HBAcceptor(SingleAngle):
             prot_pattern=donor,
             distance=distance,
             angle=DHA_angle,
-            distance_atom="P1",
+            distance_atom="P2",
             metadata_mapping={"angle": "DHA_angle"},
         )
 
