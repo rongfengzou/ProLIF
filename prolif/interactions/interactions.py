@@ -97,10 +97,10 @@ class HBAcceptor(SingleAngle):
 
     def __init__(
         self,
-        acceptor="[#7&!$([nX3])&!$([NX3]-*=[O,N,P,S])&!$([NX3]-[a])&!$([Nv4&+1]),O&!$([OX2](C)C=O)&!$(O(~a)~a)&!$(O=N-*)&!$([O-]-N=O),o+0,F&$(F-[#6])&!$(F-[#6][F,Cl,Br,I])]",
+        acceptor='[#8&!$([*]~N~[OD1]),#7&H0,N&$(N=N-[#6]);!$([D4]),F&$(F-[#6])&!$(F-[#6][F,Cl,Br,I]);!$([D3]-[*]=,:[$([#7,#8,#15,#16])])]',
         donor="[$([O,S;+0]),$([N;v3,v4&+1]),n+0]-[H]",
         distance=2.8,
-        DHA_angle=(130, 180),
+        DHA_angle=(120, 180),
     ):
         super().__init__(
             lig_pattern=acceptor,
