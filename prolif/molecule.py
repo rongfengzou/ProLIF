@@ -119,6 +119,8 @@ class Molecule(BaseRDKitMol):
         if ag.n_atoms == 0:
             raise mda.SelectionError("AtomGroup is empty, please check your selection")
         mol = ag.convert_to.rdkit(**kwargs)
+        Chem.GetSSSR(mol)
+        mol.UpdatePropertyCache(strict=False)
         return cls(mol)
 
     @classmethod
